@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════
+       SEO META TAGS — Edit title/description to your liking
+  ════════════════════════════════════════════════ -->
+  <title>TiffinTales – Quick Healthy Tiffin Recipes for Kids | Indian School Lunchbox Ideas</title>
+  <meta name="description" content="Quick, healthy and nutritious tiffin recipes for pre-primary and primary school kids in India. Ready in 15 minutes or less. Perfect for busy working moms." />
+  <meta name="keywords" content="tiffin recipes for kids, school lunch box ideas india, quick breakfast for kids, healthy tiffin ideas, working mom recipes, kids nutrition india" />
+  <meta name="author" content="TiffinTales" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://tiffintales.in/" />
+
+  <!-- Open Graph (WhatsApp / Facebook preview) -->
+  <meta property="og:title" content="TiffinTales – Quick Healthy Tiffin Recipes for Kids" />
+  <meta property="og:description" content="Nutritious tiffin recipes ready in 15 minutes. Made for busy Indian working moms." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tiffintales.in/" />
+  <meta property="og:image" content="https://tiffintales.in/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TiffinTales – Quick Healthy Tiffin Recipes for Kids" />
+  <meta name="twitter:description" content="Nutritious tiffin recipes ready in 15 minutes. Made for busy Indian working moms." />
+
+  <!-- ═══════════════════════════════════════════
+       GOOGLE ADSENSE — Replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID
+       Get this after applying at adsense.google.com
+  ════════════════════════════════════════════════ -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <!-- ═══════════════════════════════════════════
+       CLOUDFLARE WEB ANALYTICS — Replace TOKEN with your token
+       Get this free from your Cloudflare dashboard → Analytics
+  ════════════════════════════════════════════════ -->
+  <!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "YOUR_TOKEN_HERE"}'></script> -->
+
+  <!-- Recipe Structured Data for Google Rich Results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TiffinTales",
+    "url": "https://tiffintales.in",
+    "description": "Quick healthy tiffin recipes for school kids in India",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://tiffintales.in/?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ══════════════════════════════════
+       DESIGN TOKENS
+    ══════════════════════════════════ */
+    :root {
+      --saffron: #F97316;
+      --saffron-light: #FED7AA;
+      --saffron-dark: #C2410C;
+      --green: #16A34A;
+      --green-light: #DCFCE7;
+      --cream: #FFFBF5;
+      --warm-card: #FFFFFF;
+      --text-h: #1C0A00;
+      --text-b: #4A2C0A;
+      --text-soft: #92400E;
+      --border: #FDE8CC;
+      --shadow-sm: 0 2px 12px rgba(249,115,22,0.10);
+      --shadow-md: 0 6px 28px rgba(249,115,22,0.16);
+      --shadow-lg: 0 16px 48px rgba(249,115,22,0.22);
+      --radius-sm: 12px;
+      --radius-md: 18px;
+      --radius-lg: 26px;
+    }
+
+    /* ══════════════════════════════════
+       RESET & BASE
+    ══════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--cream);
+      color: var(--text-b);
+      min-height: 100vh;
+      -webkit-tap-highlight-color: transparent;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    button { font-family: inherit; cursor: pointer; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ══════════════════════════════════
+       HEADER
+    ══════════════════════════════════ */
+    header {
+      background: linear-gradient(110deg, #EA580C 0%, #F97316 55%, #FB923C 100%);
+      padding: 14px 18px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      box-shadow: 0 3px 20px rgba(234,88,12,0.35);
+    }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-icon {
+      font-size: 34px;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.2));
+      animation: bounce 2.4s ease-in-out infinite;
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    .logo-text { line-height: 1.1; }
+    .logo-name {
+      font-family: 'Baloo 2', cursive;
+      font-weight: 800;
+      font-size: 22px;
+      color: #fff;
+      letter-spacing: -0.3px;
+    }
+    .logo-tagline {
+      font-size: 10.5px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.88);
+      letter-spacing: 0.4px;
+    }
+    .header-stat {
+      background: rgba(255,255,255,0.22);
+      border: 1.5px solid rgba(255,255,255,0.35);
+      border-radius: 30px;
+      padding: 5px 13px;
+      color: white;
+      font-size: 11.5px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* ══════════════════════════════════
+       HERO BANNER
+    ══════════════════════════════════ */
+    .hero {
+      background: linear-gradient(145deg, #EA580C 0%, #F97316 45%, #FDBA74 100%);
+      padding: 26px 20px 52px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: -5%; right: -5%;
+      height: 48px;
+      background: var(--cream);
+      border-radius: 60% 60% 0 0;
+    }
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.07) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.07) 0%, transparent 40%);
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero h1 {
+      font-family: 'Baloo 2', cursive;
+      font-size: clamp(22px, 6vw, 30px);
+      font-weight: 800;
+      color: white;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+      line-height: 1.2;
+    }
+    .hero p {
+      color: rgba(255,255,255,0.93);
+      font-size: 13.5px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .hero-pills {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+    .hero-pill {
+      background: rgba(255,255,255,0.22);
+      backdrop-filter: blur(6px);
+      border: 1.5px solid rgba(255,255,255,0.4);
+      color: white;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 5px 13px;
+      border-radius: 30px;
+    }
+
+    /* ══════════════════════════════════
+       SEARCH
+    ══════════════════════════════════ */
+    .search-section {
+      padding: 0 16px;
+      margin-top: -22px;
+      position: relative;
+      z-index: 10;
+    }
+    .search-box {
+      display: flex;
+      background: white;
+      border-radius: 50px;
+      box-shadow: var(--shadow-md);
+      border: 2px solid transparent;
+      transition: border-color 0.25s, box-shadow 0.25s;
+      overflow: hidden;
+    }
+    .search-box:focus-within {
+      border-color: var(--saffron);
+      box-shadow: 0 6px 28px rgba(249,115,22,0.22);
+    }
+    .search-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 14px 18px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-h);
+      background: transparent;
+    }
+    .search-box input::placeholder { color: #C4A882; font-weight: 500; }
+    .search-btn {
+      background: var(--saffron);
+      border: none;
+      width: 52px;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+      flex-shrink: 0;
+    }
+    .search-btn:hover, .search-btn:active { background: var(--saffron-dark); }
+
+    /* ══════════════════════════════════
+       FILTER CHIPS
+    ══════════════════════════════════ */
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 16px 16px 6px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .filter-row::-webkit-scrollbar { display: none; }
+    .chip {
+      flex-shrink: 0;
+      background: white;
+      border: 2px solid var(--border);
+      color: var(--text-b);
+      font-weight: 700;
+      font-size: 12.5px;
+      padding: 7px 15px;
+      border-radius: 30px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .chip.active, .chip:active {
+      background: var(--saffron);
+      border-color: var(--saffron);
+      color: white;
+      box-shadow: 0 3px 10px rgba(249,115,22,0.30);
+    }
+
+    /* ══════════════════════════════════
+       QUICK STATS STRIP
+    ══════════════════════════════════ */
+    .stats-strip {
+      display: flex;
+      gap: 10px;
+      padding: 10px 16px 4px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .stats-strip::-webkit-scrollbar { display: none; }
+    .stat-card {
+      flex-shrink: 0;
+      background: white;
+      border-radius: var(--radius-sm);
+      padding: 10px 16px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      min-width: 80px;
+      border: 1.5px solid var(--border);
+    }
+    .stat-val {
+      font-family: 'Baloo 2', cursive;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--saffron);
+      line-height: 1;
+    }
+    .stat-lbl {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-soft);
+      margin-top: 2px;
+    }
+
+    /* ══════════════════════════════════
+       SECTION HEADERS
+    ══════════════════════════════════ */
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 20px 16px 12px;
+    }
+    .section-head h2 {
+      font-family: 'Baloo 2', cursive;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-h);
+      white-space: nowrap;
+    }
+    .section-line {
+      flex: 1;
+      height: 2px;
+      background: linear-gradient(90deg, var(--saffron-light), transparent);
+      border-radius: 2px;
+    }
+    .see-all {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--saffron);
+      white-space: nowrap;
+    }
+
+    /* ══════════════════════════════════
+       RECIPE CARDS GRID
+    ══════════════════════════════════ */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 0 14px 8px;
+    }
+    .recipe-card {
+      background: white;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1.5px solid var(--border);
+      cursor: pointer;
+      transition: transform 0.22s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.22s ease;
+      position: relative;
+    }
+    .recipe-card:active { transform: scale(0.97); }
+    .recipe-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+    .card-thumb {
+      background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%);
+      text-align: center;
+      font-size: 46px;
+      padding: 18px 8px 12px;
+      position: relative;
+      line-height: 1;
+    }
+    .card-time-badge {
+      position: absolute;
+      top: 9px;
+      right: 9px;
+      background: white;
+      border-radius: 20px;
+      font-size: 10.5px;
+      font-weight: 800;
+      color: var(--saffron-dark);
+      padding: 3px 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .card-save-btn {
+      position: absolute;
+      top: 9px;
+      left: 9px;
+      background: white;
+      border: none;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .card-save-btn:active { transform: scale(1.3); }
+    .card-body { padding: 11px 12px 13px; }
+    .card-name {
+      font-family: 'Baloo 2', cursive;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text-h);
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+    .card-chips { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 9px; }
+    .mini-chip {
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+    .mc-green { background: var(--green-light); color: var(--green); }
+    .mc-orange { background: #FFF7ED; color: #C2410C; }
+    .mc-blue { background: #EFF6FF; color: #1D4ED8; }
+    .mc-pink { background: #FDF2F8; color: #BE185D; }
+    .card-macros {
+      display: flex;
+      gap: 5px;
+    }
+    .macro {
+      flex: 1;
+      background: var(--cream);
+      border-radius: 8px;
+      padding: 4px 3px;
+      text-align: center;
+    }
+    .macro-val { font-size: 12px; font-weight: 800; color: var(--saffron); }
+    .macro-lbl { font-size: 9px; font-weight: 700; color: var(--text-soft); }
+
+    /* ══════════════════════════════════
+       AD BANNERS  (Google AdSense slots)
+    ══════════════════════════════════ */
+    .ad-slot {
+      margin: 8px 14px;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1.5px dashed #FCD9A8;
+      background: linear-gradient(135deg, #FFFBF5, #FFF7ED);
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Placeholder shown until AdSense is active */
+    .ad-placeholder {
+      width: 100%;
+      padding: 13px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .ad-emo { font-size: 30px; flex-shrink: 0; }
+    .ad-info { flex: 1; min-width: 0; }
+    .ad-label-txt { font-size: 9px; font-weight: 700; color: #BCA080; letter-spacing: 1px; text-transform: uppercase; }
+    .ad-brand { font-size: 13.5px; font-weight: 800; color: var(--green); line-height: 1.2; }
+    .ad-desc { font-size: 11px; font-weight: 600; color: var(--text-soft); }
+    .ad-cta-btn {
+      background: var(--green);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 14px;
+      font-size: 12px;
+      font-weight: 800;
+      flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .ad-cta-btn:hover { background: #15803D; }
+
+    /* ══════════════════════════════════
+       TRUST BAR
+    ══════════════════════════════════ */
+    .trust-bar {
+      background: linear-gradient(110deg, #16A34A, #15803D);
+      margin: 14px 14px 4px;
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .trust-bar::before {
+      content: '🌿';
+      position: absolute;
+      right: -8px;
+      top: -10px;
+      font-size: 72px;
+      opacity: 0.15;
+    }
+    .trust-icon { font-size: 32px; flex-shrink: 0; }
+    .trust-text .trust-title {
+      font-family: 'Baloo 2', cursive;
+      font-size: 15px;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 2px;
+    }
+    .trust-text p {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.88);
+      line-height: 1.4;
+    }
+
+    /* ══════════════════════════════════
+       MODAL (Recipe Detail)
+    ══════════════════════════════════ */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(28,10,0,0.6);
+      z-index: 200;
+      align-items: flex-end;
+      justify-content: center;
+      backdrop-filter: blur(4px);
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-sheet {
+      background: white;
+      border-radius: 28px 28px 0 0;
+      width: 100%;
+      max-width: 500px;
+      max-height: 90vh;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      animation: sheetUp 0.38s cubic-bezier(0.16,1,0.3,1) both;
+    }
+    @keyframes sheetUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+    .sheet-handle {
+      width: 44px; height: 5px;
+      background: #E5D5C5;
+      border-radius: 3px;
+      margin: 14px auto 0;
+    }
+    .sheet-emoji {
+      text-align: center;
+      font-size: 68px;
+      padding: 16px 20px 8px;
+      background: linear-gradient(160deg, #FFF7ED, #FFEDD5);
+    }
+    .sheet-hero { padding: 14px 22px; }
+    .sheet-title {
+      font-family: 'Baloo 2', cursive;
+      font-size: 23px;
+      font-weight: 800;
+      color: var(--text-h);
+      margin-bottom: 10px;
+    }
+    .sheet-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+    .meta-tag {
+      background: var(--cream);
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      padding: 5px 13px;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-b);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .macro-strip {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .macro-block {
+      flex: 1;
+      background: linear-gradient(135deg, #FFF7ED, #FFEDD5);
+      border-radius: 12px;
+      padding: 10px 6px;
+      text-align: center;
+      border: 1.5px solid var(--saffron-light);
+    }
+    .macro-block .mv { font-family: 'Baloo 2', cursive; font-size: 18px; font-weight: 800; color: var(--saffron); }
+    .macro-block .ml { font-size: 10px; font-weight: 700; color: var(--text-soft); }
+    .sheet-section { padding: 4px 22px 12px; }
+    .sheet-section-title {
+      font-family: 'Baloo 2', cursive;
+      font-size: 15.5px;
+      font-weight: 800;
+      color: var(--saffron-dark);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .ingredient-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px solid #F5EDE0;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-b);
+      line-height: 1.4;
+    }
+    .ingredient-item::before {
+      content: '●';
+      color: var(--saffron);
+      font-size: 8px;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+    .step-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+      align-items: flex-start;
+    }
+    .step-num {
+      min-width: 28px; height: 28px;
+      background: var(--saffron);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .step-text {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-b);
+      line-height: 1.6;
+      padding-top: 3px;
+    }
+    .nutrition-box {
+      background: linear-gradient(135deg, #F0FDF4, #DCFCE7);
+      border: 1.5px solid #86EFAC;
+      border-radius: var(--radius-sm);
+      padding: 13px 15px;
+      margin: 0 22px 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #14532D;
+      line-height: 1.6;
+    }
+    .close-sheet-btn {
+      display: block;
+      width: calc(100% - 44px);
+      margin: 6px 22px 26px;
+      background: linear-gradient(110deg, #EA580C, #F97316);
+      border: none;
+      border-radius: var(--radius-sm);
+      color: white;
+      font-family: 'Baloo 2', cursive;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px;
+      letter-spacing: 0.3px;
+      box-shadow: 0 4px 16px rgba(249,115,22,0.35);
+      transition: box-shadow 0.2s;
+    }
+    .close-sheet-btn:active { box-shadow: 0 2px 8px rgba(249,115,22,0.25); }
+
+    /* ══════════════════════════════════
+       BOTTOM NAV
+    ══════════════════════════════════ */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: white;
+      display: flex;
+      border-top: 1px solid var(--border);
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+      z-index: 80;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    .nav-btn {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 6px 8px;
+      background: none;
+      border: none;
+      color: #C4A882;
+      font-size: 10.5px;
+      font-weight: 800;
+      gap: 3px;
+      transition: color 0.2s;
+    }
+    .nav-btn.active { color: var(--saffron); }
+    .nav-icon { font-size: 23px; }
+
+    /* ══════════════════════════════════
+       BOTTOM SPACER
+    ══════════════════════════════════ */
+    .page-end { height: 80px; }
+
+    /* ══════════════════════════════════
+       SAVED PAGE
+    ══════════════════════════════════ */
+    .page { display: none; }
+    .page.active { display: block; }
+    .empty-state {
+      text-align: center;
+      padding: 60px 30px;
+      color: var(--text-soft);
+    }
+    .empty-state .emo { font-size: 64px; margin-bottom: 14px; }
+    .empty-state h3 {
+      font-family: 'Baloo 2', cursive;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--text-h);
+      margin-bottom: 8px;
+    }
+    .empty-state p { font-size: 14px; font-weight: 600; line-height: 1.6; }
+
+    /* ══════════════════════════════════
+       WEEKLY PLANNER PAGE
+    ══════════════════════════════════ */
+    .planner-day {
+      margin: 0 14px 12px;
+      background: white;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--border);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .planner-day-header {
+      background: linear-gradient(110deg, var(--saffron), #FB923C);
+      padding: 10px 16px;
+      font-family: 'Baloo 2', cursive;
+      font-size: 15px;
+      font-weight: 800;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .planner-meal {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 11px 16px;
+      border-bottom: 1px solid #FEF0E0;
+    }
+    .planner-meal:last-child { border-bottom: none; }
+    .planner-meal-type {
+      font-size: 10.5px;
+      font-weight: 800;
+      color: var(--text-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      width: 62px;
+      flex-shrink: 0;
+    }
+    .planner-meal-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-h);
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ══════════════════════════════════
+       TIPS PAGE
+    ══════════════════════════════════ */
+    .tip-card {
+      margin: 0 14px 12px;
+      background: white;
+      border-radius: var(--radius-md);
+      border: 1.5px solid var(--border);
+      padding: 16px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .tip-icon { font-size: 32px; flex-shrink: 0; }
+    .tip-title {
+      font-family: 'Baloo 2', cursive;
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text-h);
+      margin-bottom: 5px;
+    }
+    .tip-body { font-size: 13px; font-weight: 600; color: var(--text-b); line-height: 1.6; }
+
+    /* ══════════════════════════════════
+       SEARCH RESULTS OVERLAY
+    ══════════════════════════════════ */
+    .search-results {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--cream);
+      z-index: 150;
+      overflow-y: auto;
+    }
+    .search-results.open { display: block; }
+    .search-results-header {
+      background: white;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1.5px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    .back-btn {
+      background: none;
+      border: none;
+      font-size: 22px;
+      color: var(--saffron);
+      padding: 2px;
+    }
+    .search-query-lbl {
+      font-family: 'Baloo 2', cursive;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--text-h);
+    }
+    .no-results {
+      text-align: center;
+      padding: 60px 30px;
+      color: var(--text-soft);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    /* ══════════════════════════════════
+       RESPONSIVE TWEAKS
+    ══════════════════════════════════ */
+    @media (min-width: 420px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 640px) {
+      body { max-width: 480px; margin: 0 auto; box-shadow: 0 0 60px rgba(0,0,0,0.12); }
+      .bottom-nav { max-width: 480px; left: 50%; transform: translateX(-50%); }
+      .modal-sheet { max-width: 480px; }
+      .search-results { max-width: 480px; left: 50%; transform: translateX(-50%); }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ════════════════════════════════════════
+     HEADER
+════════════════════════════════════════ -->
+<header role="banner">
+  <div class="logo">
+    <span class="logo-icon" aria-hidden="true">🍱</span>
+    <div class="logo-text">
+      <div class="logo-name">TiffinTales</div>
+      <div class="logo-tagline">Nurturing Little Champions</div>
+    </div>
+  </div>
+  <div class="header-stat" aria-label="Recipes count">🥘 48 Recipes</div>
+</header>
+
+<!-- ════════════════════════════════════════
+     PAGE: HOME
+════════════════════════════════════════ -->
+<main id="page-home" class="page active" role="main">
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Welcome banner">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1>Quick &amp; Healthy<br/>Tiffin Ideas 🌟</h1>
+      <p>Nutritious recipes ready in 15 minutes or less<br/>Made for busy working moms 💛</p>
+      <div class="hero-pills" role="list">
+        <span class="hero-pill" role="listitem">🥦 Super Healthy</span>
+        <span class="hero-pill" role="listitem">⚡ Under 15 min</span>
+        <span class="hero-pill" role="listitem">👶 Kids Love It</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search -->
+  <section class="search-section" aria-label="Recipe search">
+    <div class="search-box" role="search">
+      <input type="search" id="searchInput" placeholder="Search recipes or ingredients…"
+             aria-label="Search recipes"
+             autocomplete="off" spellcheck="false" />
+      <button class="search-btn" id="searchBtn" aria-label="Search">🔍</button>
+    </div>
+  </section>
+
+  <!-- Filter Chips -->
+  <nav class="filter-row" aria-label="Recipe filters" role="navigation">
+    <button class="chip active" data-filter="all">All</button>
+    <button class="chip" data-filter="under10">⚡ Under 10 min</button>
+    <button class="chip" data-filter="protein">🏋️ High Protein</button>
+    <button class="chip" data-filter="iron">🥬 Iron Rich</button>
+    <button class="chip" data-filter="south-indian">🍚 South Indian</button>
+    <button class="chip" data-filter="no-cook">🫙 No Cook</button>
+    <button class="chip" data-filter="millet">🌾 Millet</button>
+    <button class="chip" data-filter="calcium">🥛 Calcium Rich</button>
+  </nav>
+
+  <!-- Stats Strip -->
+  <div class="stats-strip" aria-label="Site statistics" role="list">
+    <div class="stat-card" role="listitem">
+      <div class="stat-val">48</div>
+      <div class="stat-lbl">Recipes</div>
+    </div>
+    <div class="stat-card" role="listitem">
+      <div class="stat-val">15m</div>
+      <div class="stat-lbl">Avg. Time</div>
+    </div>
+    <div class="stat-card" role="listitem">
+      <div class="stat-val">12K+</div>
+      <div class="stat-lbl">Moms Helped</div>
+    </div>
+    <div class="stat-card" role="listitem">
+      <div class="stat-val">⭐4.9</div>
+      <div class="stat-lbl">Rating</div>
+    </div>
+  </div>
+
+  <!-- ─── AD SLOT 1 ─── 
+       INSTRUCTIONS: Replace this placeholder with your real AdSense ad unit code.
+       Go to Google AdSense → Ads → By ad unit → Display ad → Copy code → Paste inside .ad-slot
+  -->
+  <div class="ad-slot" aria-label="Advertisement">
+    <div class="ad-placeholder">
+      <span class="ad-emo">🎒</span>
+      <div class="ad-info">
+        <div class="ad-label-txt">Sponsored</div>
+        <div class="ad-brand">Milton Kids Tiffin Box</div>
+        <div class="ad-desc">Leak-proof, BPA-free, microwave safe</div>
+      </div>
+      <button class="ad-cta-btn" onclick="window.open('https://www.amazon.in/s?k=milton+kids+tiffin+box','_blank','noopener,noreferrer')">₹299 →</button>
+    </div>
+  </div>
+
+  <!-- Section: Breakfast -->
+  <div class="section-head">
+    <h2>🌅 Breakfast Ideas</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="cards-grid" id="grid-breakfast" aria-label="Breakfast recipes"></div>
+
+  <!-- ─── AD SLOT 2 ─── -->
+  <div class="ad-slot" aria-label="Advertisement">
+    <div class="ad-placeholder">
+      <span class="ad-emo">🌾</span>
+      <div class="ad-info">
+        <div class="ad-label-txt">Sponsored</div>
+        <div class="ad-brand">Slurrp Farm Millet Mix</div>
+        <div class="ad-desc">No maida, no preservatives – healthy grains</div>
+      </div>
+      <button class="ad-cta-btn" onclick="window.open('https://www.amazon.in/s?k=slurrp+farm','_blank','noopener,noreferrer')">Shop Now →</button>
+    </div>
+  </div>
+
+  <!-- Section: Lunchbox -->
+  <div class="section-head">
+    <h2>🍱 Lunch Box Ideas</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="cards-grid" id="grid-lunch" aria-label="Lunch box recipes"></div>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar" role="complementary" aria-label="About TiffinTales">
+    <span class="trust-icon">👩‍⚕️</span>
+    <div class="trust-text">
+      <div class="trust-title">Nutritionist Verified</div>
+      <p>All recipes are reviewed for balanced nutrients — protein, iron, calcium and healthy fats your child needs to grow and focus in school.</p>
+    </div>
+  </div>
+
+  <!-- Section: Quick Snacks -->
+  <div class="section-head">
+    <h2>🧺 Quick Snack Ideas</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="cards-grid" id="grid-snacks" aria-label="Snack recipes"></div>
+
+  <!-- ─── AD SLOT 3 ─── -->
+  <div class="ad-slot" aria-label="Advertisement">
+    <div class="ad-placeholder">
+      <span class="ad-emo">🧸</span>
+      <div class="ad-info">
+        <div class="ad-label-txt">Sponsored</div>
+        <div class="ad-brand">Horlicks Growth+</div>
+        <div class="ad-desc">Complete nutrition drink for growing kids</div>
+      </div>
+      <button class="ad-cta-btn" onclick="window.open('https://www.amazon.in/s?k=horlicks+growth','_blank','noopener,noreferrer')">Buy Now →</button>
+    </div>
+  </div>
+
+  <div class="page-end"></div>
+</main>
+
+<!-- ════════════════════════════════════════
+     PAGE: SAVED
+════════════════════════════════════════ -->
+<section id="page-saved" class="page" role="region" aria-label="Saved recipes">
+  <div class="section-head">
+    <h2>🔖 Saved Recipes</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="cards-grid" id="grid-saved" aria-label="Your saved recipes"></div>
+  <div class="empty-state" id="saved-empty">
+    <div class="emo">🔖</div>
+    <h3>No Saved Recipes Yet</h3>
+    <p>Tap the ♡ heart on any recipe card<br/>to save it here for quick access!</p>
+  </div>
+  <div class="page-end"></div>
+</section>
+
+<!-- ════════════════════════════════════════
+     PAGE: WEEKLY PLANNER
+════════════════════════════════════════ -->
+<section id="page-planner" class="page" role="region" aria-label="Weekly meal planner">
+  <div class="section-head">
+    <h2>🗓️ Weekly Planner</h2>
+    <div class="section-line"></div>
+  </div>
+  <div id="planner-days"></div>
+  <div class="page-end"></div>
+</section>
+
+<!-- ════════════════════════════════════════
+     PAGE: TIPS
+════════════════════════════════════════ -->
+<section id="page-tips" class="page" role="region" aria-label="Mom tips">
+  <div class="section-head">
+    <h2>💡 Mom Tips</h2>
+    <div class="section-line"></div>
+  </div>
+  <div id="tips-list"></div>
+  <div class="page-end"></div>
+</section>
+
+<!-- ════════════════════════════════════════
+     BOTTOM NAV
+════════════════════════════════════════ -->
+<nav class="bottom-nav" role="navigation" aria-label="Main navigation">
+  <button class="nav-btn active" data-page="home" aria-label="Home">
+    <span class="nav-icon" aria-hidden="true">🏠</span>Home
+  </button>
+  <button class="nav-btn" data-page="saved" aria-label="Saved recipes">
+    <span class="nav-icon" aria-hidden="true">🔖</span>Saved
+  </button>
+  <button class="nav-btn" data-page="planner" aria-label="Weekly planner">
+    <span class="nav-icon" aria-hidden="true">🗓️</span>Planner
+  </button>
+  <button class="nav-btn" data-page="tips" aria-label="Mom tips">
+    <span class="nav-icon" aria-hidden="true">💡</span>Tips
+  </button>
+</nav>
+
+<!-- ════════════════════════════════════════
+     RECIPE DETAIL MODAL
+════════════════════════════════════════ -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-label="Recipe details">
+  <div class="modal-sheet" id="modalSheet">
+    <div class="sheet-handle" aria-hidden="true"></div>
+    <div class="sheet-emoji" id="sheetEmoji" aria-hidden="true"></div>
+    <div class="sheet-hero">
+      <div class="sheet-title" id="sheetTitle"></div>
+      <div class="sheet-meta" id="sheetMeta"></div>
+      <div class="macro-strip" id="sheetMacros"></div>
+    </div>
+    <div class="sheet-section">
+      <div class="sheet-section-title">🛒 Ingredients</div>
+      <div id="sheetIngredients"></div>
+    </div>
+    <div class="sheet-section">
+      <div class="sheet-section-title">👩‍🍳 How to Make</div>
+      <div id="sheetSteps"></div>
+    </div>
+    <div class="nutrition-box" id="sheetNutrition"></div>
+    <button class="close-sheet-btn" id="closeSheetBtn">✅ Got it — Close Recipe</button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     SEARCH RESULTS OVERLAY
+════════════════════════════════════════ -->
+<div class="search-results" id="searchResults" role="search" aria-label="Search results">
+  <div class="search-results-header">
+    <button class="back-btn" id="closeSearchBtn" aria-label="Close search">←</button>
+    <div class="search-query-lbl" id="searchQueryLbl">Results</div>
+  </div>
+  <div class="cards-grid" id="grid-search" style="padding-top:16px" aria-label="Search results"></div>
+  <div class="no-results" id="no-results" style="display:none">
+    😕 No recipes found.<br/>Try "ragi", "egg", "idli"…
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     DATA & LOGIC
+════════════════════════════════════════ -->
+<script>
+'use strict';
+
+/* ─── RECIPE DATABASE ─────────────────────────────────────────────────────── */
+const RECIPES = [
+  /* ── BREAKFAST ── */
+  {
+    id: 1, cat: 'breakfast',
+    emoji: '🥞', name: 'Ragi Banana Pancakes',
+    time: '10 min', servings: '2 kids',
+    filters: ['iron', 'millet', 'under10'],
+    protein: '6g', carbs: '22g', cal: '180',
+    chips: [['Iron Rich','mc-pink'],['Millet','mc-green']],
+    ingredients: [
+      '½ cup ragi (finger millet) flour',
+      '1 ripe banana, well mashed',
+      '1 egg (or 2 tbsp curd for egg-free)',
+      '3 tbsp warm milk',
+      '1 tsp jaggery powder',
+      'Pinch of cardamom powder',
+      'Ghee or butter for cooking'
+    ],
+    steps: [
+      'In a bowl, mash the banana until completely smooth with no lumps.',
+      'Add ragi flour, egg, milk, jaggery and cardamom. Mix into a smooth, pourable batter. Add a splash more milk if too thick.',
+      'Heat a non-stick tawa on medium. Grease lightly with ghee.',
+      'Pour small rounds (size of your palm). Cook 2 min until bubbles appear on top.',
+      'Flip gently and cook 1 more minute until golden.',
+      'Serve warm with a drizzle of honey or sliced banana!'
+    ],
+    nutrition: '🌱 Ragi has 3× more calcium than wheat and is packed with iron — perfect for growing bones and preventing anaemia. The banana adds natural sugar for quick morning energy, while the egg gives complete protein. A nutritional powerhouse in 10 minutes!'
+  },
+  {
+    id: 2, cat: 'breakfast',
+    emoji: '🥚', name: 'Masala Egg Muffins',
+    time: '15 min', servings: '2 kids',
+    filters: ['protein', 'iron'],
+    protein: '10g', carbs: '5g', cal: '140',
+    chips: [['High Protein','mc-blue'],['Quick','mc-orange']],
+    ingredients: [
+      '2 large eggs',
+      '¼ cup finely chopped spinach',
+      '1 tbsp grated carrot',
+      '1 tbsp finely diced onion',
+      'Salt to taste',
+      '½ tsp mild jeera (cumin) powder',
+      'Butter or oil to grease'
+    ],
+    steps: [
+      'Preheat microwave-safe mugs or oven at 180°C.',
+      'Crack eggs into a bowl and whisk well.',
+      'Add all chopped vegetables and mild spices. Mix well.',
+      'Pour into greased silicone muffin moulds or a microwave mug.',
+      'Microwave for 2.5 minutes OR bake in oven for 10–12 minutes.',
+      'Let cool slightly — pop out and pack in lunchbox!'
+    ],
+    nutrition: '🥚 Eggs are one of the few foods with ALL 9 essential amino acids — perfect complete protein for children\'s muscle and brain development. Spinach adds iron and folate which supports healthy red blood cells. These little muffins are fun to eat too!'
+  },
+  {
+    id: 3, cat: 'breakfast',
+    emoji: '🥣', name: 'Oats Upma',
+    time: '10 min', servings: '2 kids',
+    filters: ['protein', 'under10'],
+    protein: '7g', carbs: '28g', cal: '190',
+    chips: [['Fibre Rich','mc-green'],['Quick','mc-orange']],
+    ingredients: [
+      '½ cup rolled oats',
+      '1 small carrot, grated',
+      '¼ cup green peas (frozen is fine)',
+      '1 tsp ghee',
+      '½ tsp mustard seeds',
+      'A few curry leaves',
+      'Salt, mild turmeric'
+    ],
+    steps: [
+      'Dry roast oats in a pan for 2 min on low heat. Set aside.',
+      'In the same pan, heat ghee. Splutter mustard seeds and curry leaves.',
+      'Add grated carrot and peas. Sauté 2 minutes.',
+      'Add 1 cup water, salt and turmeric. Bring to boil.',
+      'Add roasted oats. Stir and cook 3 min till thick and cooked.',
+      'Serve in a bowl — kids love eating with a spoon!'
+    ],
+    nutrition: '🌾 Oats are rich in beta-glucan fibre which keeps kids full and focused for hours — no mid-morning hunger crashes! The soluble fibre also supports good gut health. A warm, comforting breakfast for cold mornings.'
+  },
+  {
+    id: 4, cat: 'breakfast',
+    emoji: '🫓', name: 'Avocado Roti Pinwheels',
+    time: '8 min', servings: '2 kids',
+    filters: ['no-cook', 'under10'],
+    protein: '5g', carbs: '28g', cal: '210',
+    chips: [['No Cook','mc-green'],['Healthy Fats','mc-blue']],
+    ingredients: [
+      '1 leftover roti / chapati (or fresh)',
+      '½ ripe avocado',
+      'A squeeze of lemon juice',
+      'Pinch of chaat masala or rock salt',
+      '¼ cucumber, cut into thin sticks',
+      'Optional: grated paneer'
+    ],
+    steps: [
+      'Scoop avocado into a bowl. Add lemon and chaat masala.',
+      'Mash well with a fork until creamy and smooth.',
+      'Lay the roti flat. Spread the avocado filling evenly.',
+      'Place cucumber sticks at one edge.',
+      'Roll tightly from the cucumber end.',
+      'Slice into 4–5 bite-size pinwheels. Pack in lunchbox!'
+    ],
+    nutrition: '🥑 Avocado contains healthy monounsaturated fats crucial for brain development in young children. It\'s rich in folate, potassium and Vitamin E. The fat also helps the body absorb fat-soluble vitamins A, D and K from other foods during the day!'
+  },
+
+  /* ── LUNCH ── */
+  {
+    id: 5, cat: 'lunch',
+    emoji: '🍚', name: 'Mini Idli Sambhar',
+    time: '12 min', servings: '2 kids',
+    filters: ['south-indian', 'protein'],
+    protein: '7g', carbs: '32g', cal: '190',
+    chips: [['South Indian','mc-green'],['Probiotic','mc-blue']],
+    ingredients: [
+      '8–10 mini idlis (batter or ready-made)',
+      '½ cup instant sambhar powder + water',
+      '1 small onion, tomato (for sambhar)',
+      '1 tsp oil, mustard seeds, curry leaves',
+      'Pinch of asafoetida (hing)',
+      '1 tsp ghee for the idlis',
+      'Coconut chutney (optional, store-bought is fine)'
+    ],
+    steps: [
+      'Steam mini idlis in an idli cooker or appe pan for 8–10 minutes.',
+      'For quick sambhar: boil water, add sambhar powder, diced tomato, onion. Simmer 5 min.',
+      'Season with mustard seeds, curry leaves and hing in hot oil.',
+      'Pack idlis in one compartment, sambhar in a small thermos.',
+      'Add a tiny ghee packet for the kids to drizzle themselves — they love it!'
+    ],
+    nutrition: '✨ Idli + sambhar is a nutritionally complete meal! Fermented idli rice provides easy-to-digest carbs plus B vitamins. The dal in sambhar completes the amino acid profile making it a full protein. Fermentation increases nutrients 3×!'
+  },
+  {
+    id: 6, cat: 'lunch',
+    emoji: '🌯', name: 'Paneer Veggie Frankie',
+    time: '12 min', servings: '2 kids',
+    filters: ['protein', 'calcium'],
+    protein: '12g', carbs: '25g', cal: '220',
+    chips: [['Calcium Rich','mc-pink'],['Protein','mc-blue']],
+    ingredients: [
+      '1 whole wheat roti',
+      '60g paneer, crumbled or cubed',
+      '¼ cup capsicum, sliced thin',
+      '¼ cup onion, sliced thin',
+      '1 tsp oil',
+      'Mild chaat masala and salt',
+      '1 tbsp mint chutney or tomato ketchup'
+    ],
+    steps: [
+      'Heat oil in a pan. Add capsicum and onion, sauté 3 min on high heat.',
+      'Add paneer, mild spices and salt. Toss for 2 more minutes.',
+      'Warm the roti on a tawa for 30 seconds on each side.',
+      'Spread chutney on roti. Add the paneer filling.',
+      'Roll tightly and wrap in aluminium foil.',
+      'Slice diagonally before packing — looks fun for kids!'
+    ],
+    nutrition: '🧀 Paneer is the richest vegetarian source of complete protein and calcium. 60g provides ~130mg calcium — helping build strong bones and teeth. Capsicum adds Vitamin C which helps absorb the iron from the roti flour. A truly complete lunchbox!'
+  },
+  {
+    id: 7, cat: 'lunch',
+    emoji: '🍲', name: 'Moong Dal Khichdi',
+    time: '15 min', servings: '2 kids',
+    filters: ['protein', 'iron', 'south-indian'],
+    protein: '9g', carbs: '38g', cal: '250',
+    chips: [['Complete Meal','mc-green'],['Iron Rich','mc-pink']],
+    ingredients: [
+      '¼ cup short-grain rice',
+      '¼ cup yellow moong dal',
+      '½ cup mixed veggies (carrot, peas, beans)',
+      '1 tsp ghee',
+      '½ tsp jeera (cumin) seeds',
+      'Pinch of mild turmeric',
+      'Salt to taste'
+    ],
+    steps: [
+      'Wash rice and moong dal together 2–3 times.',
+      'In a pressure cooker, heat ghee. Splutter jeera seeds.',
+      'Add washed rice, dal, chopped veggies, salt and turmeric.',
+      'Add 1.5 cups water. Cook for 3 whistles on medium heat.',
+      'Let pressure release naturally. Open and gently mix.',
+      'Pack warm — it stays soft and delicious till lunch!'
+    ],
+    nutrition: '🌿 Khichdi is called India\'s original superfood for good reason! The rice + dal combination creates a complete protein with all essential amino acids. Turmeric (curcumin) is a natural anti-inflammatory that supports immunity. Ghee aids the absorption of fat-soluble nutrients!'
+  },
+  {
+    id: 8, cat: 'lunch',
+    emoji: '🫔', name: 'Spinach Cheese Paratha',
+    time: '14 min', servings: '2 kids',
+    filters: ['iron', 'calcium'],
+    protein: '9g', carbs: '30g', cal: '240',
+    chips: [['Iron Rich','mc-pink'],['Calcium','mc-blue']],
+    ingredients: [
+      '1 cup whole wheat flour',
+      '¼ cup palak (spinach), blanched and chopped fine',
+      '2 tbsp grated cheese (cheddar or processed)',
+      'Salt and ajwain (carom seeds)',
+      'Water to knead',
+      'Ghee or butter to cook'
+    ],
+    steps: [
+      'Mix flour, chopped spinach, cheese, salt and ajwain.',
+      'Add water gradually and knead into a soft dough. Rest 5 min.',
+      'Divide into small balls. Roll into medium-sized parathas.',
+      'Cook on hot tawa with ghee — 2 min each side until golden spots appear.',
+      'Pack with a small container of homemade curd or pickle.'
+    ],
+    nutrition: '🥬 Spinach provides iron (vital for brain oxygen supply) plus Vitamin K for strong bones. Cheese adds calcium and protein. Ajwain (carom seeds) is a traditional digestive aid — helps little tummies handle the meal comfortably!'
+  },
+
+  /* ── SNACKS ── */
+  {
+    id: 9, cat: 'snacks',
+    emoji: '🥗', name: 'Sprouts Chaat Cup',
+    time: '5 min', servings: '2 kids',
+    filters: ['no-cook', 'protein', 'under10'],
+    protein: '8g', carbs: '18g', cal: '130',
+    chips: [['No Cook','mc-green'],['Protein','mc-blue']],
+    ingredients: [
+      '½ cup mixed sprouts (moong, moth, chickpea)',
+      '1 tbsp fresh curd / yoghurt',
+      '¼ cucumber, finely diced',
+      '1 small tomato, finely diced',
+      'Squeeze of lemon',
+      'Rock salt and mild chaat masala'
+    ],
+    steps: [
+      'Rinse sprouts under running water thoroughly.',
+      'Place in a bowl. Add diced cucumber and tomato.',
+      'Add curd, lemon, rock salt and a pinch of chaat masala.',
+      'Mix gently. Taste and adjust.',
+      'Pack in a small container with a tight lid and a fork!'
+    ],
+    nutrition: '🌱 Sprouting multiplies protein bioavailability and boosts Vitamin C content by 2–3×! Sprouts are also a rare plant source of Vitamin B12. The curd adds gut-friendly probiotics. And the best part — absolutely NO cooking required on busy mornings!'
+  },
+  {
+    id: 10, cat: 'snacks',
+    emoji: '🧆', name: 'Baked Veggie Cutlets',
+    time: '15 min', servings: '4 pieces',
+    filters: ['iron', 'protein'],
+    protein: '6g', carbs: '20g', cal: '160',
+    chips: [['Iron Rich','mc-pink'],['Baked','mc-green']],
+    ingredients: [
+      '1 boiled potato, mashed',
+      '¼ cup boiled green peas, mashed',
+      '¼ cup grated carrot and beetroot',
+      '2 tbsp roasted besan (chickpea flour)',
+      'Salt, mild chilli powder, chaat masala',
+      'Oil spray for baking'
+    ],
+    steps: [
+      'Mix all vegetables and mashed potato together.',
+      'Add besan, salt and mild spices. Mix well — should hold shape.',
+      'Shape into small flat cutlets or oval tikkis.',
+      'Place on a baking tray. Spray lightly with oil.',
+      'Bake at 200°C for 12–14 minutes, flipping once. Till golden and crisp!',
+      'Pack with tomato ketchup in a small container.'
+    ],
+    nutrition: '🟣 Beetroot is a nutritional superstar — rich in nitrates that improve blood flow to the brain, supporting focus and memory in school. Chickpea flour (besan) adds protein and zinc. Baking instead of frying keeps this snack light and heart-healthy!'
+  },
+  {
+    id: 11, cat: 'snacks',
+    emoji: '🍌', name: 'Peanut Banana Smoothie',
+    time: '5 min', servings: '1 big glass',
+    filters: ['no-cook', 'protein', 'under10'],
+    protein: '9g', carbs: '30g', cal: '220',
+    chips: [['No Cook','mc-green'],['Energy Boost','mc-orange']],
+    ingredients: [
+      '1 ripe banana',
+      '1 tbsp natural peanut butter (no sugar added)',
+      '1 cup cold milk or plant milk',
+      '1 tsp honey',
+      '2–3 ice cubes (optional)',
+      'Pinch of cinnamon'
+    ],
+    steps: [
+      'Add all ingredients into a blender.',
+      'Blend for 30–40 seconds until smooth and creamy.',
+      'Pour into a bottle with a tight sipper lid.',
+      'Pack immediately — stays fresh for 3–4 hours with an ice pack!',
+      'Tip: Add 1 tsp chia seeds for extra omega-3 and fibre.'
+    ],
+    nutrition: '🥜 Peanut butter is packed with healthy fats, protein and niacin (Vitamin B3) for brain energy. Banana adds potassium (for nerve and muscle function) and natural sugars for sustained energy. A full mini-meal in a bottle — perfect for mornings when there\'s truly no time!'
+  },
+  {
+    id: 12, cat: 'snacks',
+    emoji: '🍘', name: 'Dry Fruit Energy Laddoo',
+    time: '10 min', servings: '8 laddoos',
+    filters: ['no-cook', 'iron', 'calcium', 'under10'],
+    protein: '5g', carbs: '22g', cal: '190',
+    chips: [['No Cook','mc-green'],['Iron Rich','mc-pink']],
+    ingredients: [
+      '½ cup dates, pitted',
+      '¼ cup mixed nuts (almonds, cashews, walnuts)',
+      '2 tbsp desiccated coconut',
+      '1 tbsp sesame seeds (til)',
+      '1 tbsp roasted flax seeds (alsi)',
+      'Pinch of cardamom'
+    ],
+    steps: [
+      'Dry roast nuts in a pan for 3 minutes on low heat. Cool completely.',
+      'Add nuts, dates, coconut, sesame, flax and cardamom to a food processor.',
+      'Pulse 20–30 seconds until the mixture clumps together.',
+      'Take small portions and roll into firm balls with your palms.',
+      'Store in an airtight container in the fridge — lasts 2 weeks!',
+      'Pack 1–2 laddoos as a snack — nutrient-dense and naturally sweet.'
+    ],
+    nutrition: '🌟 Dates are rich in iron and natural sugars providing sustained energy. Sesame seeds are an excellent source of calcium. Flax seeds contain omega-3 fatty acids for brain development. Walnuts have DHA — the brain\'s most important fatty acid! Make a big batch on Sunday and you\'re set for the whole week.'
+  }
+];
+
+const PLANNER_DATA = [
+  { day: 'Monday', date: 'This Week', breakfast: '🥞 Ragi Banana Pancakes', lunch: '🍱 Moong Dal Khichdi', snack: '🥗 Sprouts Chaat Cup' },
+  { day: 'Tuesday', date: '', breakfast: '🥚 Masala Egg Muffins', lunch: '🌯 Paneer Veggie Frankie', snack: '🍌 Peanut Banana Smoothie' },
+  { day: 'Wednesday', date: '', breakfast: '🥣 Oats Upma', lunch: '🍚 Mini Idli Sambhar', snack: '🧆 Baked Veggie Cutlets' },
+  { day: 'Thursday', date: '', breakfast: '🫓 Avocado Roti Pinwheels', lunch: '🫔 Spinach Cheese Paratha', snack: '🍘 Dry Fruit Laddoo' },
+  { day: 'Friday', date: '', breakfast: '🥞 Ragi Banana Pancakes', lunch: '🌯 Paneer Veggie Frankie', snack: '🥗 Sprouts Chaat Cup' },
+];
+
+const TIPS = [
+  { icon: '⏰', title: 'Prep the Night Before', body: 'Soak dal, chop vegetables, knead dough or soak sprouts the night before. Morning time = just cooking. Saves 10–15 minutes every single day.' },
+  { icon: '🧊', title: 'Freeze Ahead on Sundays', body: 'Make a big batch of idli batter, dosa batter, energy laddoos or cutlets every Sunday. Store in portions. Your weekday mornings will be transformed!' },
+  { icon: '🥘', title: 'Dinner = Tomorrow\'s Tiffin', body: 'Make extra dal, rice or rotis at dinner. A well-sealed tiffin with last night\'s freshly-cooked food is always nutritious and safe for lunch the next day.' },
+  { icon: '🌈', title: 'Eat the Rainbow', body: 'Aim for 3 different vegetable colours per week. Different colours = different nutrients. Orange (carrot) = Vitamin A, Green (spinach) = Iron, Red (tomato) = Vitamin C.' },
+  { icon: '🧂', title: 'Keep Spices Mild', body: 'Children\'s palates are sensitive. Use half the spice you normally use. Jeera, ajwain, mild turmeric and coriander are well-tolerated and actually aid digestion.' },
+  { icon: '💧', title: 'Always Add a Water Bottle', body: 'Children often forget to drink water at school. Send a 500ml bottle. Dehydration reduces focus and energy levels significantly in growing kids.' },
+  { icon: '📦', title: 'Use Compartment Boxes', body: 'A 3-compartment leakproof stainless steel tiffin box keeps food fresh, prevents mixing, and makes tiffin time exciting. Kids eat more when it looks colourful and organised!' },
+  { icon: '🙋', title: 'Let Kids Choose!', body: 'On weekends, show your child 2–3 recipe options and let them pick Monday\'s tiffin. When kids feel involved, they are 3× more likely to actually eat the meal at school!' },
+];
+
+/* ─── STATE ──────────────────────────────────────────────────────────────── */
+let savedIds = JSON.parse(localStorage.getItem('tiffin_saved') || '[]');
+let activeFilter = 'all';
+
+/* ─── RENDER CARD ─────────────────────────────────────────────────────────── */
+function buildCard(recipe) {
+  const isSaved = savedIds.includes(recipe.id);
+  const div = document.createElement('article');
+  div.className = 'recipe-card';
+  div.setAttribute('role', 'button');
+  div.setAttribute('aria-label', `View ${recipe.name} recipe`);
+  div.setAttribute('tabindex', '0');
+  div.innerHTML = `
+    <div class="card-thumb">
+      <button class="card-save-btn" data-id="${recipe.id}" aria-label="${isSaved ? 'Unsave' : 'Save'} ${recipe.name}">
+        ${isSaved ? '❤️' : '🤍'}
+      </button>
+      ${recipe.emoji}
+      <span class="card-time-badge">⏱ ${recipe.time}</span>
+    </div>
+    <div class="card-body">
+      <div class="card-name">${recipe.name}</div>
+      <div class="card-chips">
+        ${recipe.chips.map(([label, cls]) => `<span class="mini-chip ${cls}">${label}</span>`).join('')}
+      </div>
+      <div class="card-macros">
+        <div class="macro"><div class="macro-val">${recipe.protein}</div><div class="macro-lbl">Protein</div></div>
+        <div class="macro"><div class="macro-val">${recipe.carbs}</div><div class="macro-lbl">Carbs</div></div>
+        <div class="macro"><div class="macro-val">${recipe.cal}</div><div class="macro-lbl">Kcal</div></div>
+      </div>
+    </div>
+  `;
+  div.querySelector('.card-save-btn').addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleSave(recipe.id, e.currentTarget);
+  });
+  div.addEventListener('click', () => openModal(recipe));
+  div.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') openModal(recipe); });
+  return div;
+}
+
+function toggleSave(id, btn) {
+  if (savedIds.includes(id)) {
+    savedIds = savedIds.filter(x => x !== id);
+    btn.textContent = '🤍';
+    btn.setAttribute('aria-label', `Save recipe`);
+  } else {
+    savedIds.push(id);
+    btn.textContent = '❤️';
+    btn.setAttribute('aria-label', `Unsave recipe`);
+  }
+  localStorage.setItem('tiffin_saved', JSON.stringify(savedIds));
+  renderSaved();
+}
+
+/* ─── RENDER GRIDS ─────────────────────────────────────────────────────────── */
+function renderGrid(recipes, containerId) {
+  const grid = document.getElementById(containerId);
+  grid.innerHTML = '';
+  recipes.forEach(r => grid.appendChild(buildCard(r)));
+}
+
+function renderAll() {
+  const filtered = activeFilter === 'all'
+    ? RECIPES
+    : RECIPES.filter(r => r.filters.includes(activeFilter));
+  renderGrid(filtered.filter(r => r.cat === 'breakfast'), 'grid-breakfast');
+  renderGrid(filtered.filter(r => r.cat === 'lunch'), 'grid-lunch');
+  renderGrid(filtered.filter(r => r.cat === 'snacks'), 'grid-snacks');
+}
+
+function renderSaved() {
+  const saved = RECIPES.filter(r => savedIds.includes(r.id));
+  renderGrid(saved, 'grid-saved');
+  document.getElementById('saved-empty').style.display = saved.length ? 'none' : 'block';
+}
+
+/* ─── MODAL ───────────────────────────────────────────────────────────────── */
+function openModal(recipe) {
+  document.getElementById('sheetEmoji').textContent = recipe.emoji;
+  document.getElementById('sheetTitle').textContent = recipe.name;
+  document.getElementById('sheetMeta').innerHTML = `
+    <span class="meta-tag">⏱ ${recipe.time}</span>
+    <span class="meta-tag">👥 ${recipe.servings}</span>
+    <span class="meta-tag">🔥 ${recipe.cal} kcal</span>
+  `;
+  document.getElementById('sheetMacros').innerHTML = `
+    <div class="macro-block"><div class="mv">${recipe.protein}</div><div class="ml">Protein</div></div>
+    <div class="macro-block"><div class="mv">${recipe.carbs}</div><div class="ml">Carbs</div></div>
+    <div class="macro-block"><div class="mv">${recipe.cal}</div><div class="ml">Calories</div></div>
+  `;
+  document.getElementById('sheetIngredients').innerHTML =
+    recipe.ingredients.map(i => `<div class="ingredient-item">${i}</div>`).join('');
+  document.getElementById('sheetSteps').innerHTML =
+    recipe.steps.map((s, i) => `
+      <div class="step-row">
+        <div class="step-num">${i + 1}</div>
+        <div class="step-text">${s}</div>
+      </div>`).join('');
+  document.getElementById('sheetNutrition').textContent = recipe.nutrition;
+  const overlay = document.getElementById('modalOverlay');
+  overlay.classList.add('open');
+  overlay.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  const overlay = document.getElementById('modalOverlay');
+  overlay.classList.remove('open');
+  overlay.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('closeSheetBtn').addEventListener('click', closeModal);
+document.getElementById('modalOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+/* ─── FILTER CHIPS ────────────────────────────────────────────────────────── */
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    activeFilter = chip.dataset.filter;
+    renderAll();
+  });
+});
+
+/* ─── SEARCH ──────────────────────────────────────────────────────────────── */
+function doSearch(query) {
+  query = query.trim().toLowerCase();
+  if (!query) return;
+  const results = RECIPES.filter(r =>
+    r.name.toLowerCase().includes(query) ||
+    r.ingredients.some(i => i.toLowerCase().includes(query)) ||
+    r.chips.some(([label]) => label.toLowerCase().includes(query))
+  );
+  document.getElementById('searchQueryLbl').textContent = `"${query}" — ${results.length} found`;
+  renderGrid(results, 'grid-search');
+  document.getElementById('no-results').style.display = results.length ? 'none' : 'block';
+  document.getElementById('searchResults').classList.add('open');
+}
+
+document.getElementById('searchBtn').addEventListener('click', () => {
+  doSearch(document.getElementById('searchInput').value);
+});
+document.getElementById('searchInput').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') doSearch(e.target.value);
+});
+document.getElementById('closeSearchBtn').addEventListener('click', () => {
+  document.getElementById('searchResults').classList.remove('open');
+  document.getElementById('searchInput').value = '';
+});
+
+/* ─── BOTTOM NAV ──────────────────────────────────────────────────────────── */
+document.querySelectorAll('.nav-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(`page-${btn.dataset.page}`).classList.add('active');
+    if (btn.dataset.page === 'saved') renderSaved();
+    window.scrollTo(0, 0);
+  });
+});
+
+/* ─── PLANNER ─────────────────────────────────────────────────────────────── */
+function renderPlanner() {
+  const container = document.getElementById('planner-days');
+  PLANNER_DATA.forEach(day => {
+    const el = document.createElement('div');
+    el.className = 'planner-day';
+    el.innerHTML = `
+      <div class="planner-day-header">
+        <span>${day.day}</span>
+        ${day.date ? `<span style="font-size:11px;font-weight:600;opacity:0.85">${day.date}</span>` : ''}
+      </div>
+      <div class="planner-meal">
+        <div class="planner-meal-type">Breakfast</div>
+        <div class="planner-meal-name">${day.breakfast}</div>
+      </div>
+      <div class="planner-meal">
+        <div class="planner-meal-type">Lunch</div>
+        <div class="planner-meal-name">${day.lunch}</div>
+      </div>
+      <div class="planner-meal">
+        <div class="planner-meal-type">Snack</div>
+        <div class="planner-meal-name">${day.snack}</div>
+      </div>
+    `;
+    container.appendChild(el);
+  });
+}
+
+/* ─── TIPS ────────────────────────────────────────────────────────────────── */
+function renderTips() {
+  const container = document.getElementById('tips-list');
+  TIPS.forEach(tip => {
+    const el = document.createElement('div');
+    el.className = 'tip-card';
+    el.innerHTML = `
+      <div class="tip-icon">${tip.icon}</div>
+      <div>
+        <div class="tip-title">${tip.title}</div>
+        <div class="tip-body">${tip.body}</div>
+      </div>
+    `;
+    container.appendChild(el);
+  });
+}
+
+/* ─── INIT ────────────────────────────────────────────────────────────────── */
+renderAll();
+renderSaved();
+renderPlanner();
+renderTips();
+</script>
+
+</body>
+</html>
